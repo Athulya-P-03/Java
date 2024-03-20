@@ -1,0 +1,26 @@
+// create a superclass
+class A{
+	A(){
+		super();
+		System.out.println("Inside A's constructor");
+	}
+}
+//create a subclass by extending class A
+class B extends A{
+	B(){
+		super(); // invoke superclass constructor
+		System.out.println("Inside B's constructor");
+	}
+}
+//create another subclass by extending B
+class C extends B{
+	C(){
+		super();	//invoke superclass constructor
+		System.out.println("Inside C's constructor");
+	}
+}
+class Main{
+	public static void main(String[] args){
+		C c=new C();
+	}
+}
