@@ -1,0 +1,48 @@
+//create an abstract class representing shape
+abstract class Shape{
+	public abstract double CalculateArea(); //abstract method for calculating area
+	//create concrete method for displaying shape information
+	public void displayInfo(){
+		System.out.println("This is a shape");
+	} 
+}
+//concrete subclass representing a rectangle
+class Rectangle extends Shape{
+	int length;
+	int width;
+	
+	public Rectangle(int length,int width){
+		this.length=length;
+		this.width=width;
+	}
+	//override
+	public double CalculateArea(){
+		return length*width;
+	}
+}
+//concrete subclass representing circle
+class Circle extends Shape{
+	int radius;
+	
+	public Circle(int radius){
+	 	this.radius=radius;
+	 }
+	 //override
+	 public double CalculateArea(){
+	 	return Math.PI*radius*radius;
+	 }
+}
+public class Main{
+	public static void main(String[] args){
+		//creating objects of concrete class
+		Shape rectangle=new Rectangle(6,4);
+		Shape circle=new Circle(3);
+		//calling abstract and concrete methods
+		System.out.println("Area of Rectangle :"+rectangle.CalculateArea());
+		rectangle.displayInfo();
+		System.out.println("Area of Circle :"+circle.CalculateArea());
+		circle.displayInfo();
+	}
+}
+	 	
+
