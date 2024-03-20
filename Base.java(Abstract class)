@@ -1,0 +1,22 @@
+//create an abstract class
+abstract class emp{
+	abstract void printInfo();
+}
+//abstraction performed using extends
+class Employee extends emp{
+	void printInfo(){
+		String name="Sharan";
+		int age=29;
+		float salary=45000.00F;
+		
+		System.out.println("Name : "+name);
+		System.out.println("Age :"+age);
+		System.out.println("salary :"+salary);
+	}
+}
+class Base{
+	public static void main(String[] args){
+		emp s=new Employee();
+		s.printInfo();
+	}
+}
