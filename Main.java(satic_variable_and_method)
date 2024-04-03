@@ -1,0 +1,20 @@
+class MyClass{
+	//static variable
+	 static int count=0;
+	 //static method
+	 static void incrementCount(){
+	 	count++;
+	 }
+}
+public class Main{
+	public static void main(String[] args){
+		//Accessing static variable directly using the class name
+		System.out.println("Initial count: "+MyClass.count);
+		//Calling static method using the class name
+		MyClass.incrementCount();
+		//Accessing static variable after incrementing
+		System.out.println("Update Count: "+MyClass.count);
+	}
+}
+
+
