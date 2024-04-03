@@ -1,0 +1,27 @@
+interface Animals{
+	void MakeSound(); //Abstract Method
+	String species="Mammals";
+}
+//concrete class representing a Dog
+class Dog implements Animals{
+	public void MakeSound(){
+		System.out.println("Bark");
+	}
+}
+//concrete class representing a Cat
+class Cat implements Animals{
+	public void MakeSound(){
+		System.out.println("Meow");
+	}
+}
+//Main class to demonstrate the usage
+public class AnimalDemo{
+	public static void main(String[] args){
+		Dog dog=new Dog();
+		Cat cat=new Cat();
+		dog.MakeSound();
+		cat.MakeSound();
+		System.out.println("Dog Species : "+Animals.species);
+		System.out.println("Cat Species : "+Animals.species);
+	}
+}
