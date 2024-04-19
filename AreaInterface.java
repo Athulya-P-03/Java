@@ -81,7 +81,7 @@ class Rectangle implements Shape{
     }
 }
 
-public class Main{
+public class AreaInterface{
     public static void main(String args[]){
         int wish,ch;
         Scanner sc=new Scanner(System.in);
