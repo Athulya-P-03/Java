@@ -49,10 +49,10 @@ System.out.println("----MENU----");
                     System.out.println("Strings are equal? " + str.str1.equals(string2));
                     break;
                 case 5:
-       System.out.println("Enter the substring you want to replace:");
-       String oldSubstring = sc.next();
-       System.out.println("Enter the new substring:");
-       String newSubstring = sc.next();
+                    System.out.println("Enter the substring you want to replace:");
+                    String oldSubstring = sc.next();
+                    System.out.println("Enter the new substring:");
+                    String newSubstring = sc.next();
                     String modifiedString = str.str1.replace(oldSubstring, newSubstring);
                     System.out.println("Modified string: " + modifiedString);
                     break;
